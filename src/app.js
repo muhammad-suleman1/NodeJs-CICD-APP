@@ -10,7 +10,7 @@ app.use(logger);
 app.use('/api/health', healthRoutes);
 
 app.use((req, res) => {
-  res.status(404).json({ message: 'Not Found' });
+  res.status(404).json({ message: 'Hey this is changed' });
 });
 
 module.exports = app;
